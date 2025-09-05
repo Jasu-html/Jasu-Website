@@ -1,0 +1,147 @@
+/* --- Reset & Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-image: url("/images/bg1.jpg");
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 8px 32px;   
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;       /* centers vertically */
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;   /* adjust size */
+  width: auto;
+  margin-left: 155px;
+  display: block;
+}
+
+.right-photo img {
+  height: 50px;
+  width: auto;
+  margin-right: 155px;
+  display: block;
+  border-radius: 30px;
+}
+
+/* Center Links */
+nav ul {
+  display: flex;
+  gap: 32px;  
+  margin-left: auto;
+  margin-right: 16px;  
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+h1:hover {
+  color: #ff9800;
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;          /* Allow multiple rows */
+  justify-content: center;  
+  align-items: center;      
+  max-width: 1500px;        
+  margin: 0 auto;           /* Center the whole gallery container */
+}
+
+.gallery {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  text-align: center;
+  margin: 16px;
+}
+
+.gallery:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 250px;             /* Adjust image size */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+.caption{
+  padding-top: 5px;
+  text-align: left;
+}
+/* --- Footer --- */
+footer {
+  background: #222;
+  color: #ddd;
+  padding: 24px;   
+  text-align: center;
+  margin-top: 48px;   
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;   
+  margin-top: 8px;   
+}
+
+footer a {
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}
+

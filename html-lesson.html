@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lesson</title>
+  <link rel="stylesheet" href="css/lesson.css">
+</head>
+<body background="images/bg.jpg">
+    <header id="header">
+    <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <!-- Links -->
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="resume.html">My Resume</a></li>
+        <li><a href="html-lesson.html">Lesson</a></li>
+      </ul>
+    <!-- 2nd Photo (right) -->
+    <div class="right-photo">
+      <img src="images/justin.jpg" alt="User Photo">
+    </div>
+    </nav>
+  </header>
+  <h1 class="title">HTML Lesson</h1>
+  <p class="title">This file contains the most commonly used HTML tags with examples and comments.</p>
+  <p class="title"><strong>Made by:</strong> Justin Pon Alarcio</p>
+
+  <h2 class="title">Text Formatting</h2>
+  <div class="example">
+    <!-- Paragraph -->
+    <p>This is a normal paragraph</p>
+
+    <!-- Bold -->
+    <p>This is <b>bold</b> text</p>
+
+    <!-- Italic -->
+    <p>This is <i>italic</i> text</p>
+
+    <!-- Strong (semantic bold) -->
+    <p>This is <strong>important</strong> text</p>
+
+    <!-- Emphasis (semantic italic) -->
+    <p>This is <em>emphasized</em> text</p>
+
+    <!-- Small -->
+    <p>This is <small>small</small> text</p>
+
+    <!-- Big (deprecated but still works in some browsers) -->
+    <p>This is <big>big</big> text</p>
+
+    <!-- Subscript -->
+    <p>H<sub>2</sub>O (subscript)</p>
+
+    <!-- Superscript -->
+    <p>2<sup>10</sup> = 1024 (superscript)</p>
+
+    <!-- Inserted text -->
+    <p>This is <ins>inserted</ins> text</p>
+
+    <!-- Deleted text -->
+    <p>This is <del>deleted</del> text</p>
+
+    <!-- Marked/highlighted -->
+    <p>This is <mark>highlighted</mark> text</p>
+  </div>
+
+  <h2 class="title">Headings</h2>
+  <div class="example">
+    <!-- Headings -->
+    <h1>This is H1</h1>
+    <h2>This is H2</h2>
+    <h3>This is H3</h3>
+    <h4>This is H4</h4>
+    <h5>This is H5</h5>
+    <h6>This is H6</h6>
+  </div>
+
+  <h2 class="title">Lists</h2>
+  <div class="example">
+    <h3>Unordered List</h3>
+    <ul>
+      <li class="list">Item One</li>
+      <li class="list">Item Two</li>
+      <li class="list">Item Three</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+      <li class="list">First</li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd class="list">Hypertext Markup Language</dd>
+      <dt>CSS</dt>
+      <dd class="list">Cascading Style Sheets</dd>
+    </dl>
+  </div>
+
+  <h2 class="title">Links and Images</h2>
+  <div class="example">
+    <!-- Hyperlink -->
+    <p><a href="https://www.example.com">This is a link</a></p>
+
+    <!-- Image -->
+    <p><img src="images/meme.jpg" alt="Placeholder Image"></p>
+  </div>
+
+  <h2 class="title">Tables</h2>
+  <div class="example">
+    <!-- Table -->
+    <table border="1" cellpadding="5">
+      <h3>Sample Table</h3>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>25</td>
+      </tr>
+    </table >
+    <br>
+    <table border="3" style="width: 500px;">
+      <thead style="background-color: blueviolet; color: #ffffff; height: 30px;">
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Address</td>
+        </tr>
+      </thead>
+      <tbody style="background-color: aquamarine;">
+        <tr>
+          <td>John Nibato</td>
+          <td>24</td>
+          <td>Olivarez</td>
+        </tr>
+        <tr>
+          <td>Carlo</td>
+          <td>23</td>
+          <td rowspan="2">Taga dyan lang</td>
+        <tr>
+          <td>Dennis</td>
+          <td>20</td>
+
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" align="center">Tables</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <h2 class="title">Forms</h2>
+  <div class="example">
+    <!-- Form Example -->
+     <form id="login" action="" style="background-color: aquamarine;">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" maxlength="18" placeholder="john pork" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" maxlength="18" placeholder="*******" required>
+      <br><br>
+      <button type="submit" name="submit" id="submit" onclick="validate()">login</button>
+      <br><br>
+    </form>
+
+    <form id="registration">
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male" id="gender" checked>
+      <label for="male">Male:</label>
+      
+      <input type="radio" name="gender" value="female" id="gender" checked>
+      <label for="female">female:</label><br><br>
+      <button type="submit" name="submit" id="submit" onclick="registration()">Submit</button>
+      <br><br>
+      <div>
+      <label for="genre">Genre:</label>
+        <select name="genre" id="genre">
+          <option value="rock">Rock</option>
+          <option value="pop">Pop</option>
+          <option value="opm">Opm</option>
+        </select>
+
+         <button type="submit" name="submit" id="submit" onclick="registration()">Submit</button>
+      </div>
+    </form>
+    
+    <form>
+      <label>Choose multiple:</label>
+      <input type="checkbox"> A
+      <input type="checkbox"> B<br><br>
+
+      <label for="cars">Select a car:</label>
+      <select id="cars">
+        <option>Volvo</option>
+        <option>BMW</option>
+        <option>Audi</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <h2 class="title">Video</h2>
+  <div class="example">
+    <!-- Video -->
+    <video width="320" height="240" controls autoplay loop muted>
+      <source src="videos/meme.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="320" height="240" controls autoplay loop muted>
+      <source src="videos/meme.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="320" height="240" controls autoplay loop muted>
+      <source src="videos/meme.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h2 class="title">Audio</h2>
+    <!-- Audio -->
+    <audio controls>
+      <source src="audio/stnp.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <audio controls>
+      <source src="audio/breaking_bad_theme.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <audio controls>
+      <source src="audio/stnp.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    </div>
+    <h2 class="title">Figures</h2>
+    <div class="example">
+      <div style="display: flex; background-color: rgb(242, 255, 186);">
+      <figure>
+        <img src="images/sir.jpg" alt="coco martin" height="180px">
+        <figcaption>Sir.. Tapos na po...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/saul.gif" alt="saul goodman" height="180px">
+        <figcaption>When the impostor is sus...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cat.gif" alt="cat vibing" height="180px">
+        <figcaption>Vibing car...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/house.gif" alt="when its lupos" height="180px">
+        <figcaption>Im here for your car's extended warranty...</figcaption>
+      </figure>
+    </div>
+    <div style="display: flex; background-color: rgb(147, 255, 171); ;" >
+      <figure>
+        <img src="images/absolute-cinema-zerep.gif" alt="cinema" height="180px">
+        <figcaption>My honest reaction...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gold-ship.gif" alt="heya" height="180px">
+        <figcaption>Get Mog...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/dpwh.jpg" alt="Paldo lods" height="180px">
+        <figcaption>Paldo na naman...</figcaption>
+      </figure>
+      <figure>
+        <img src="images/john.gif" alt="when its lupos" height="180px">
+        <figcaption>Pls answer...</figcaption>
+      </figure>
+    </div><br><br>
+  </div>
+  <h2 class="title">Iframe</h2>
+  <section class="details">
+    <div class="border">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73485.18524070816!2d121.06760321713526!3d14.536884268650862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cec5d2bb4d77%3A0x8a24fa628a114411!2sNinoy%20Aquino%20International%20Airport!5e0!3m2!1sen!2sph!4v1756972384330!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+      </iframe>"
+    </div>
+
+  </section>
+
+  <h2 class="title">Semantic Elements</h2>
+  <div class="example">
+    <!-- Semantic elements -->
+    <header>Header Section</header>
+    <nav>Navigation Section</nav>
+    <main>Main Content</main>
+    <section>Section Content</section>
+    <article>Article Content</article>
+    <aside>Sidebar Content</aside>
+    <footer>Footer Section</footer>
+  </div>
+
+  <h2 class="title">Other Useful Tags</h2>
+  <div class="example">
+    <!-- Line Break -->
+    <p>Line one<br>Line two (with break)</p>
+
+    <!-- Horizontal Rule -->
+    <hr>
+
+    <!-- Preformatted Text -->
+    <pre>
+This text preserves
+line breaks and   spaces.
+    </pre>
+
+    <!-- Code -->
+    <p>Inline <code>&lt;code&gt;</code> tag example</p>
+
+    <!-- Blockquote -->
+    <blockquote>
+      "This is a blockquote, usually for quoted text."
+    </blockquote>
+
+    <!-- Abbreviation -->
+    <p><abbr title="Hypertext Markup Language">HTML</abbr> is a markup language.</p>
+  </div>
+    <footer id="footer">
+    <p class="copyright">&copy; 2025 Justin Alarcio | All Rights Reserved</p>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="javascript:void(0);" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Go Up</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+<script>
+  
+  function validate (){
+    const username = document.getElementById('username').value
+    const password = document.getElementById('password').value
+
+      if(username === 'justin' && password === 'pogi'){
+        alert("login succesful: your username is:  "+ username +" and password is: " + password);
+        window.location.href = "index.html";
+      }else{
+        alert("Invalid username and password!");
+      }
+  }
+
+  function registration(){
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var genre = document.querySelector('select[name="genre"]').value;
+    alert ("your gender is: "+gender+ "your genre is: "+ genre);
+  }
+</script>

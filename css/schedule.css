@@ -1,0 +1,160 @@
+/* --- Reset & Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-image: url("/images/bg1.jpg");
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 8px 32px;   
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;       /* centers vertically */
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;   /* adjust size */
+  width: auto;
+  margin-left: 155px;
+  display: block;
+}
+
+.right-photo img {
+  height: 50px;
+  width: auto;
+  margin-right: 155px;
+  display: block;
+  border-radius: 30px;
+}
+
+/* Center Links */
+nav ul {
+  display: flex;
+  gap: 32px;  
+  margin-left: auto;
+  margin-right: 16px;  
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+th, td { 
+  border: 2px solid #000; 
+  padding: 8px; 
+  vertical-align: middle; 
+}
+thead { 
+  background: #222; 
+  color: #fff; 
+}
+tfoot { 
+  background: #222; 
+  color: #fff;
+}
+/* subject colors */
+.ss102      { 
+  background: #FFD966; 
+}     
+.pe21       { 
+  background: #93C47D; 
+}     
+.oliv201    { 
+  background: #D9D2E9; 
+}     
+.cis212lec  { 
+  background: #F6B26B; 
+}     
+.cis212lab  { 
+  background: #E69138; 
+}     
+.it211lec   { 
+  background: #6FA8DC; 
+}    
+.it211lab   { 
+  background: #3D85C6; 
+  color:#fff; 
+}  
+.it212lec   { 
+  background: #E06666; 
+}    
+.it212lab   { 
+  background: #CC0000; 
+  color:#fff; 
+} 
+tbody td:empty { 
+  background: #757575; 
+}
+.noclass    { 
+  background: #fff; 
+}
+/* --- Footer --- */
+footer {
+  background: #222;
+  color: #ddd;
+  padding: 24px;   
+  text-align: center;
+  margin-top: 48px;   
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;   
+  margin-top: 8px;   
+}
+
+footer a {
+  color: #ff9800;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+}
