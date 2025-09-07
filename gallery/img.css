@@ -1,6 +1,6 @@
     body {
       font-family: Arial, sans-serif;
-      background-image: url("/images/bggal.jpg");
+      background-image: url("../images/bggal.jpg");
       margin: 0;
       padding: 20px;
     }
@@ -8,7 +8,7 @@
     .container {
       max-width: 1000px;
       margin: auto;
-      background-image: url("/images/bg1.jpg");
+      background-image: url("../images/bg1.jpg");
       opacity: 0.8;
       border-radius: 16px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -76,4 +76,5 @@
     }
     .btn-next:hover {
       color: #222;
+
     }
