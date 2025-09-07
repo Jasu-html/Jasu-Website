@@ -75,7 +75,8 @@ nav a:hover {
 .example {
   margin: 0 auto;
   width: 1000px;
-  background-color: #ffffff5b;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
   padding: 15PX;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
@@ -124,3 +125,4 @@ footer a:hover {
 .copyright {
   text-align: center;
 }
+
