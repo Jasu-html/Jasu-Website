@@ -9,6 +9,7 @@
 body {
   line-height: 1.6;
   background-image: url("../images/abstract-bg.jpg");
+  background-size: 100%;
   color: #ffffff;
 }
 
@@ -225,5 +226,6 @@ footer a:hover {
 .copyright {
   text-align: center;
 }
+
 
 
